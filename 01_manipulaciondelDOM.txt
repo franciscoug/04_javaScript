@@ -1,0 +1,154 @@
+/********************      DOM          *******************************
+ * 
+ * 
+ * El DOM (Document Object Model) es una interfaz de programación para documentos HTML y XML. 
+ * Proporciona una representación estructurada del documento y define cómo los programas pueden
+ * acceder y manipular su estructura, estilo y contenido. 
+ * 
+ * En términos simples, el DOM convierte un documento web en un conjunto de objetos que los 
+ * lenguajes de programación pueden manipular.
+ * 
+ * 
+ * Características del DOM
+ * 
+ * 
+    Estructura en Árbol:
+
+        El DOM representa el documento como una estructura jerárquica en forma de árbol. 
+        Cada nodo en el árbol corresponde a una parte del documento, como un elemento, 
+        un atributo o un texto.
+
+        Ejemplo: Un documento HTML con una estructura de <html>, <body>, <div>, etc., 
+                 se convierte en un árbol de nodos.
+
+
+    Acceso y Manipulación:
+
+        El DOM permite a los lenguajes de programación, como JavaScript, acceder y manipular 
+        el contenido, la estructura y el estilo del documento.
+
+        Ejemplo: Puedes usar JavaScript para cambiar el texto de un párrafo, 
+                agregar nuevos elementos, o modificar los estilos CSS de un elemento.
+
+    Eventos:
+
+        El DOM permite la gestión de eventos, como clics de ratón, pulsaciones de teclas y 
+        otros tipos de interacciones del usuario.
+
+        Ejemplo: Puedes agregar un evento de clic a un botón que ejecute una función 
+                cuando el botón es presionado.
+
+
+    Ejemplo de Estructura del DOM
+
+         Cosidera el siguiente documento:
+
+             <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Mi Documento</title>
+            </head>
+            <body>
+                <h1>Encabezado</h1>
+                <p>Este es un párrafo.</p>
+            </body>
+            </html>  
+            
+        El DOM se este documento se vería así:
+
+            - html
+                - head
+                    - title
+                    - "Mi Documento"
+                - body
+                    - h1
+                    - "Encabezado"
+                    - p
+                    - "Este es un párrafo."
+
+    MANIPULACIÓN DEL DOM CON JAVASCRIPT
+
+       
+
+El DOM (Document Object Model) es una interfaz de programación para documentos HTML y XML. 
+Proporciona una representación estructurada del documento y define cómo los programas pueden 
+acceder y manipular su estructura, estilo y contenido. En términos simples, 
+el DOM convierte un documento web en un conjunto de objetos que los lenguajes de programación 
+pueden manipular.
+
+Características del DOM
+Estructura en Árbol:
+
+El DOM representa el documento como una estructura jerárquica en forma de árbol. Cada nodo en el árbol corresponde a una parte del documento, como un elemento, un atributo o un texto.
+Ejemplo: Un documento HTML con una estructura de <html>, <body>, <div>, etc., se convierte en un árbol de nodos.
+Acceso y Manipulación:
+
+El DOM permite a los lenguajes de programación, como JavaScript, acceder y manipular el contenido, la estructura y el estilo del documento.
+Ejemplo: Puedes usar JavaScript para cambiar el texto de un párrafo, agregar nuevos elementos, o modificar los estilos CSS de un elemento.
+Eventos:
+
+El DOM permite la gestión de eventos, como clics de ratón, pulsaciones de teclas y otros tipos de interacciones del usuario.
+Ejemplo: Puedes agregar un evento de clic a un botón que ejecute una función cuando el botón es presionado.
+Ejemplo de Estructura del DOM
+Considera el siguiente documento HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Documento</title>
+</head>
+<body>
+    <h1>Encabezado</h1>
+    <p>Este es un párrafo.</p>
+</body>
+</html>
+El DOM de este documento se vería algo así:
+
+- html
+  - head
+    - title
+      - "Mi Documento"
+  - body
+    - h1
+      - "Encabezado"
+    - p
+      - "Este es un párrafo."
+
+
+Manipulación del DOM con JavaScript
+
+Aquí hay algunos ejemplos de cómo puedes manipular el DOM usando JavaScript:
+
+1. Acceder a Elementos:
+
+    let encabezado = document.querySelector('h1');
+    console.log(encabezado.textContent); // "Encabezado"
+
+2. Modificar Contenido:
+
+    let parrafo = document.querySelector('p');
+    parrafo.textContent = "Nuevo contenido del párrafo.";
+
+3. Agregar Elementos:
+
+   let nuevoElemento = document.createElement('div');
+    nuevoElemento.textContent = "Este es un nuevo div.";
+    document.body.appendChild(nuevoElemento);
+
+4. Manejo de Eventos:
+
+    let boton = document.querySelector('button');
+        boton.addEventListener('click', () => {
+            alert('Botón presionado!');
+        });
+
+
+El DOM es una interfaz de programación que permite a los desarrolladores acceder y manipular 
+documentos HTML y XML como una estructura jerárquica de nodos. 
+Proporciona métodos y propiedades para modificar el contenido, la estructura y el estilo del 
+documento, así como para manejar eventos del usuario.
+
+Es una parte fundamental del desarrollo web, ya que permite la creación de aplicaciones web 
+dinámicas e interactivas.
+*/
+
